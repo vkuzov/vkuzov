@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="78" viewBox="0 0 1000 78" role="img" aria-labelledby="title">
+  <title id="title">Идея → интерфейс → проверка → улучшение</title>
+  <style>.flow {stroke-dasharray:6 14;animation:flow 3s linear infinite;} @keyframes flow{to{stroke-dashoffset:-100;}} @media(prefers-reduced-motion:reduce){.flow{animation:none;}}</style>
+  <rect x="1" y="1" width="998" height="76" rx="12" fill="#0c131c" stroke="#283a48"/>
+  <path d="M45 57H955" stroke="#58e6cf" stroke-opacity=".45" class="flow"/>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="14" text-anchor="middle">
+    <text x="160" y="34" fill="#58e6cf">01 / ИДЕЯ</text><text x="385" y="34" fill="#afbdcc">02 / ИНТЕРФЕЙС</text><text x="615" y="34" fill="#a6b7ff">03 / ПРОВЕРКА</text><text x="845" y="34" fill="#afbdcc">04 / УЛУЧШЕНИЕ</text>
+  </g>
+</svg>
