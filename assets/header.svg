@@ -6,9 +6,9 @@
 <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#8ba4c5" stroke-opacity=".08"/></pattern>
 <linearGradient id="beam" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="1080" y2="0"><stop stop-color="#50efd5" stop-opacity="0"/><stop offset=".5" stop-color="#50efd5"/><stop offset="1" stop-color="#50efd5" stop-opacity="0"/></linearGradient>
 <style>
-.orbit{transform-origin:872px 203px;animation:orbit 24s linear infinite}.reverse{animation-direction:reverse;animation-duration:36s}.dash{stroke-dasharray:5 13;animation:dash 8s linear infinite}.cursor{animation:blink 1.2s step-end infinite}.scan{animation:scan 6s linear infinite}.signal{animation:pulse 4s ease-in-out infinite}.two{animation-delay:1.3s}
+.radar-sweep{transform-origin:0px 0px;animation:radar-sweep 6s linear infinite}@keyframes radar-sweep{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.orbit{transform-origin:872px 203px;animation:orbit 24s linear infinite}.reverse{animation-direction:reverse;animation-duration:36s}.dash{stroke-dasharray:5 13;animation:dash 8s linear infinite}.cursor{animation:blink 1.2s step-end infinite}.scan{animation:scan 6s linear infinite}.signal{animation:pulse 4s ease-in-out infinite}.two{animation-delay:1.3s}
 @keyframes orbit{to{transform:rotate(360deg)}}@keyframes dash{to{stroke-dashoffset:-180}}@keyframes blink{50%{opacity:0}}@keyframes pulse{50%{opacity:.25}}@keyframes scan{0%{transform:translateY(70px);opacity:0}8%{opacity:.85}88%{opacity:.85}100%{transform:translateY(400px);opacity:0}}
-@media(prefers-reduced-motion:reduce){.orbit,.dash,.cursor,.scan,.signal{animation:none}.scan{opacity:0}}
+@media(prefers-reduced-motion:reduce){.radar-sweep,.orbit,.dash,.cursor,.scan,.signal{animation:none}.scan{opacity:0}}
 </style></defs>
 <rect x="1" y="1" width="1098" height="468" rx="20" fill="url(#bg)" stroke="#304254"/>
 <rect x="1" y="1" width="1098" height="468" rx="20" fill="url(#grid)"/>
@@ -27,6 +27,16 @@
 <rect x="455" y="336" width="8" height="16" fill="#62ead3" class="cursor"/>
 <text x="42" y="440" fill="#9eafc5" font-size="13" letter-spacing="1">ПРОЕКТЫ С КОНТЕКСТОМ. РЕШЕНИЯ С ОБЪЯСНЕНИЕМ.</text>
 <text x="1059" y="440" text-anchor="end" fill="#62ead3" font-size="12" letter-spacing="2">EXPLORE THE WORK ↓</text>
+</g>
+<g transform="translate(872 203)">
+<g class="radar-sweep">
+<path d="M0 0L66-114.315A132 132 0 0 1 132 0Z" fill="#62ead3" opacity=".06"/>
+<path d="M0 0L101.118-84.848A132 132 0 0 1 132 0Z" fill="#62ead3" opacity=".09"/>
+<path d="M0 0L124.039-45.147A132 132 0 0 1 132 0Z" fill="#62ead3" opacity=".14"/>
+<path d="M0 0H132" stroke="#62ead3" stroke-width="7" opacity=".12"/>
+<path d="M0 0H132" stroke="#8affea" stroke-width="2.5" opacity=".95"/>
+</g>
+<circle r="4" fill="#c8fff4"/>
 </g>
 <g fill="none" stroke="#62ead3">
 <circle cx="872" cy="203" r="132" opacity=".12"/>
