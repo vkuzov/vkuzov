@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/header.svg?v=radar-2" width="100%" alt="Виталий Кутузов. QA / Web / AI. От пользовательского сценария до деталей реализации." />
+  <img src="assets/radar-header.svg" width="100%" alt="Виталий Кутузов. QA / Web / AI. От пользовательского сценария до деталей реализации." />
 </p>
 
 <p align="center">
