@@ -46,7 +46,6 @@
 <path d="M744 98v-14h14M986 84h14v14M1000 308v14h-14M758 322h-14v-14" opacity=".5"/>
 <path d="M738 354H1005" opacity=".4" class="dash"/>
 </g>
-<path d="M844 174l-26 29 26 29M900 174l26 29-26 29M882 166l-20 74" stroke="#d9e7f6" stroke-width="3" fill="none"/>
 <circle cx="955" cy="138" r="5" fill="#62ead3" class="signal"/><circle cx="807" cy="258" r="4" fill="#a8a2ff" class="signal two"/>
 <g class="scan" fill="none" stroke="url(#beam)"><path d="M20 0H1080" stroke-width="16" opacity=".09"/><path d="M20 0H1080" stroke-width="6" opacity=".2"/><path d="M20 0H1080" stroke-width="2.5"/></g>
 </svg>
