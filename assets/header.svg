@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="330" viewBox="0 0 1000 330" role="img" aria-labelledby="title desc">
+  <title id="title">Виталий Кутузов</title>
+  <desc id="desc">Создание сайтов с ИИ и QA. Декоративный радар и сканирующая линия.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#a6b7ff" stroke-opacity=".07"/></pattern>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0c131c"/><stop offset="1" stop-color="#111e29"/></linearGradient>
+    <linearGradient id="scan"><stop stop-color="#58e6cf" stop-opacity="0"/><stop offset=".5" stop-color="#58e6cf" stop-opacity=".7"/><stop offset="1" stop-color="#58e6cf" stop-opacity="0"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#58e6cf" stop-opacity=".12"/><stop offset="1" stop-color="#58e6cf" stop-opacity="0"/></radialGradient>
+    <style>
+      .sweep { transform-origin: 820px 155px; animation: turn 12s linear infinite; }
+      .scan { animation: scan 8s ease-in-out infinite; }
+      .cursor { animation: blink 1.4s step-end infinite; }
+      .signal { animation: pulse 4s ease-in-out infinite; }
+      @keyframes turn { to { transform: rotate(360deg); } }
+      @keyframes scan { 0%,100% { transform:translateY(40px); opacity:0; } 15%,75% {opacity:.6} 85% { transform:translateY(290px); opacity:0; } }
+      @keyframes blink { 50% { opacity:0; } }
+      @keyframes pulse { 50% { opacity:.3; } }
+      @media (prefers-reduced-motion: reduce) { .sweep,.scan,.cursor,.signal { animation:none; } .scan {opacity:0;} }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="998" height="328" rx="18" fill="url(#bg)" stroke="#283a48"/>
+  <rect x="1" y="1" width="998" height="328" rx="18" fill="url(#grid)"/>
+  <circle cx="820" cy="155" r="175" fill="url(#glow)"/>
+  <g fill="none" stroke="#58e6cf">
+    <circle cx="820" cy="155" r="95" opacity=".3"/><circle cx="820" cy="155" r="65" opacity=".17"/><circle cx="820" cy="155" r="33" opacity=".12"/>
+    <path d="M710 155h220M820 45v220" opacity=".12"/>
+    <path d="M820 155l82-48" class="sweep" opacity=".7"/>
+    <path d="M732 74v-12h12M896 62h12v12M908 236v12h-12M744 248h-12v-12" opacity=".65"/>
+  </g>
+  <circle cx="860" cy="110" r="4" fill="#58e6cf" class="signal"/>
+  <circle cx="785" cy="198" r="3" fill="#a6b7ff" class="signal"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="46" y="53" fill="#58e6cf" font-size="13" letter-spacing="3">VKUZOV / DIGITAL WORKSPACE</text>
+    <text x="44" y="128" fill="#f2f6fa" font-size="51" font-weight="700">Виталий Кутузов</text>
+    <text x="47" y="167" fill="#afbdcc" font-size="21">Создаю сайты с ИИ. Развиваюсь в QA.</text>
+    <rect x="46" y="201" width="571" height="48" rx="8" fill="#080f17" stroke="#283a48"/>
+    <text x="62" y="231" fill="#58e6cf" font-family="Consolas,monospace" font-size="16">&gt; idea → interface → check → improve</text>
+    <rect x="461" y="215" width="9" height="20" fill="#58e6cf" class="cursor"/>
+    <text x="47" y="291" fill="#718697" font-size="12" letter-spacing="2">WEB / USER FLOWS / TEST DESIGN</text>
+    <text x="820" y="290" text-anchor="middle" fill="#718697" font-size="11" letter-spacing="2">EXPLORE · BUILD · VERIFY</text>
+  </g>
+  <path d="M20 0H980" stroke="url(#scan)" class="scan"/>
+</svg>
