@@ -4,10 +4,10 @@
 <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#080d15"/><stop offset="1" stop-color="#142332"/></linearGradient>
 <radialGradient id="halo"><stop stop-color="#38efd2" stop-opacity=".16"/><stop offset="1" stop-color="#38efd2" stop-opacity="0"/></radialGradient>
 <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#8ba4c5" stroke-opacity=".08"/></pattern>
-<linearGradient id="beam"><stop stop-color="#50efd5" stop-opacity="0"/><stop offset=".5" stop-color="#50efd5"/><stop offset="1" stop-color="#50efd5" stop-opacity="0"/></linearGradient>
+<linearGradient id="beam" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="1080" y2="0"><stop stop-color="#50efd5" stop-opacity="0"/><stop offset=".5" stop-color="#50efd5"/><stop offset="1" stop-color="#50efd5" stop-opacity="0"/></linearGradient>
 <style>
-.orbit{transform-origin:872px 203px;animation:orbit 24s linear infinite}.reverse{animation-direction:reverse;animation-duration:36s}.dash{stroke-dasharray:5 13;animation:dash 8s linear infinite}.cursor{animation:blink 1.2s step-end infinite}.scan{animation:scan 9s ease-in-out infinite}.signal{animation:pulse 4s ease-in-out infinite}.two{animation-delay:1.3s}
-@keyframes orbit{to{transform:rotate(360deg)}}@keyframes dash{to{stroke-dashoffset:-180}}@keyframes blink{50%{opacity:0}}@keyframes pulse{50%{opacity:.25}}@keyframes scan{0%,100%{transform:translateY(75px);opacity:0}15%,65%{opacity:.35}85%{transform:translateY(390px);opacity:0}}
+.orbit{transform-origin:872px 203px;animation:orbit 24s linear infinite}.reverse{animation-direction:reverse;animation-duration:36s}.dash{stroke-dasharray:5 13;animation:dash 8s linear infinite}.cursor{animation:blink 1.2s step-end infinite}.scan{animation:scan 6s linear infinite}.signal{animation:pulse 4s ease-in-out infinite}.two{animation-delay:1.3s}
+@keyframes orbit{to{transform:rotate(360deg)}}@keyframes dash{to{stroke-dashoffset:-180}}@keyframes blink{50%{opacity:0}}@keyframes pulse{50%{opacity:.25}}@keyframes scan{0%{transform:translateY(70px);opacity:0}8%{opacity:.85}88%{opacity:.85}100%{transform:translateY(400px);opacity:0}}
 @media(prefers-reduced-motion:reduce){.orbit,.dash,.cursor,.scan,.signal{animation:none}.scan{opacity:0}}
 </style></defs>
 <rect x="1" y="1" width="1098" height="468" rx="20" fill="url(#bg)" stroke="#304254"/>
@@ -38,5 +38,5 @@
 </g>
 <path d="M844 174l-26 29 26 29M900 174l26 29-26 29M882 166l-20 74" stroke="#d9e7f6" stroke-width="3" fill="none"/>
 <circle cx="955" cy="138" r="5" fill="#62ead3" class="signal"/><circle cx="807" cy="258" r="4" fill="#a8a2ff" class="signal two"/>
-<path d="M20 0H1080" stroke="url(#beam)" class="scan"/>
+<g class="scan" fill="none" stroke="url(#beam)"><path d="M20 0H1080" stroke-width="16" opacity=".09"/><path d="M20 0H1080" stroke-width="6" opacity=".2"/><path d="M20 0H1080" stroke-width="2.5"/></g>
 </svg>
